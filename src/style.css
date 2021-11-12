@@ -1,3 +1,14 @@
 h1 {
   color: forestgreen;
 }
+.weather-app {
+  border-style: solid;
+  border: olivedrab;
+}
+.date {
+  list-style: none;
+}
+.main-icon {
+  text-align: right;
+  font-size: 30px;
+}

@@ -15,18 +15,54 @@
   </head>
   <body>
     <div class="container">
-      <h1>Hello World</h1>
-      <div class="row">
-        <div class="col-4">Column</div>
-        <div class="col-4">
-          <input
-            type="text"
-            class="form-cotrol form control-lg search-city-text"
-            placeholder="Your City"
-            id="search-bar"
-          />
+      <div class="weather-app">
+        <div class="row">
+          <div class="col-4">
+            <input
+              type="button"
+              class="btn btn-success current-city-button"
+              value="Current City"
+              id="current-city-button"
+            />
+          </div>
+          <div class="col-4">
+            <input
+              type="text"
+              class="form-cotrol form control-lg search-city-text"
+              placeholder="Your City"
+              id="search-bar"
+            />
+          </div>
+          <div class="col-4">
+            <input
+              type="button"
+              class="btn btn-success search-city-button"
+              value="Search"
+              id="search-button"
+            />
+          </div>
         </div>
-        <div class="col-4">Column</div>
+        <div class="row">
+          <div class="col">
+            <ul class="date">
+              <li>Friday</li>
+              <li>19:05</li>
+            </ul>
+          </div>
+          <div class="col"><h1>New York</h1></div>
+          <div class="col">Column</div>
+        </div>
+        <div class="row">
+          <div class="col-5 main-icon">ICON</div>
+          <div class="col-7 main-degree"><h2>0°C | °F</h2></div>
+        </div>
+        <small>
+          <a
+            href="https://github.com/angotron/Vanilla-WeatherApp"
+            target="_blank"
+            >Open-source code, by Angotron</a
+          ></small
+        >
       </div>
     </div>
     <script src="src/script.js"></script>
