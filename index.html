@@ -10,13 +10,17 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <script
+      src="https://kit.fontawesome.com/ef01d60e03.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>Vanilla WeatherApp</title>
   </head>
   <body>
     <div class="container">
       <div class="weather-app">
-        <div class="row">
+        <div class="row search-row">
           <div class="col-4">
             <input
               type="button"
@@ -42,19 +46,81 @@
             />
           </div>
         </div>
-        <div class="row">
-          <div class="col">
+        <div class="row place-row">
+          <div class="col-4">
             <ul class="date">
               <li>Friday</li>
               <li>19:05</li>
             </ul>
           </div>
-          <div class="col"><h1>New York</h1></div>
-          <div class="col">Column</div>
+          <div class="col-4"><h1>New York</h1></div>
+          <div class="col-4"></div>
         </div>
-        <div class="row">
-          <div class="col-5 main-icon">ICON</div>
+        <div class="row icon-row">
+          <div class="col-5 main-icon">
+            <i class="fas fa-cloud-meatball"></i>
+          </div>
           <div class="col-7 main-degree"><h2>0°C | °F</h2></div>
+        </div>
+        <div class="row forecast-row">
+          <div class="col-3">
+            <div class="card" style="width: 150px">
+              <i class="fas fa-cloud-sun forecast-icon"></i>
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">text</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">An item</li>
+                <li class="list-group-item">A second item</li>
+                <li class="list-group-item">A third item</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card" style="width: 150px">
+              <i class="fas fa-cloud-sun forecast-icon"></i>
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">text</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">An item</li>
+                <li class="list-group-item">A second item</li>
+                <li class="list-group-item">A third item</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card" style="width: 150px">
+              <i class="fas fa-cloud-sun forecast-icon"></i>
+
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">text</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">An item</li>
+                <li class="list-group-item">A second item</li>
+                <li class="list-group-item">A third item</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card" style="width: 150px">
+              <i class="fas fa-cloud-sun forecast-icon"></i>
+
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">text</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">An item</li>
+                <li class="list-group-item">A second item</li>
+                <li class="list-group-item">A third item</li>
+              </ul>
+            </div>
+          </div>
         </div>
         <small>
           <a
