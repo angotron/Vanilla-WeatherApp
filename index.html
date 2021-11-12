@@ -14,6 +14,8 @@
       src="https://kit.fontawesome.com/ef01d60e03.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
     <link rel="stylesheet" href="src/style.css" />
     <title>Vanilla WeatherApp</title>
   </head>
@@ -53,14 +55,24 @@
               <li>19:05</li>
             </ul>
           </div>
-          <div class="col-4"><h1>New York</h1></div>
-          <div class="col-4"></div>
-        </div>
-        <div class="row icon-row">
-          <div class="col-5 main-icon">
+          <div class="col-4"><h1 id="searched-city">city</h1></div>
+          <div class="col-4 main-icon">
             <i class="fas fa-cloud-meatball"></i>
           </div>
-          <div class="col-7 main-degree"><h2>0°C | °F</h2></div>
+        </div>
+        <div class="row temp-row">
+          <div class="col-5"></div>
+          <div class="col-4 main-degree">
+            <h2 id="current-temp"></h2>
+            °C | °F
+          </div>
+          <div class="col-3">
+            <ul class="conditions">
+              <li id="precipitation">Precipitation</li>
+              <li id="humidity">Humidity</li>
+              <li id="wind">Wind</li>
+            </ul>
+          </div>
         </div>
         <div class="row forecast-row">
           <div class="col-3">
