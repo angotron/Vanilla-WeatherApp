@@ -6,6 +6,9 @@ h2 {
   font-size: 60px;
   color: rgb(35, 76, 129, 0.8);
 }
+li {
+  text-transform: capitalize;
+}
 small a {
   font-family: monospace;
   text-decoration: none;
