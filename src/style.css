@@ -1,12 +1,16 @@
 h1 {
-  color: forestgreen;
+  color: rgb(53, 134, 114);
+  font-size: 60px;
 }
 h2 {
   display: inline;
   font-size: 60px;
   color: rgb(35, 76, 129, 0.8);
 }
-li {
+ul {
+  padding: 0;
+}
+li.first-letter {
   text-transform: capitalize;
 }
 small a {
@@ -31,27 +35,23 @@ small a {
 .current-city-button {
   border-radius: 8px;
   border-width: 2px;
-  border-color: crimson;
-  background: radial-gradient(
-    circle at 10% 20%,
-    rgb(255, 197, 61) 0%,
-    rgb(255, 94, 7) 90%
+  border-color: aqua;
+  background: linear-gradient(
+    to top,
+    rgb(17, 55, 105, 0.8) 0%,
+    rgb(100, 143, 177, 0.8) 100%
   );
 }
 .search-city-text {
   background: linear-gradient(
-    90deg,
-    rgb(2, 250, 70, 0.4) -1.7%,
-    rgb(2, 238, 250, 0.4) 21.1%,
-    rgb(174, 8, 237, 0.4) 46%,
-    rgb(237, 8, 117, 0.4) 64.2%,
-    rgb(237, 8, 117, 0.4) 81%,
-    rgb(248, 136, 0, 0.4) 97.2%
+    to top,
+    rgb(17, 55, 105, 0.8) 0%,
+    rgb(100, 143, 177, 0.8) 100%
   );
 
   border-radius: 8px;
-  border-width: 2px;
-  border-color: rgb(3, 253, 253, 0.1);
+  border-width: 4px;
+  border-color: aqua;
   padding: 7px;
 }
 
@@ -59,7 +59,11 @@ small a {
   border-radius: 8px;
   border-width: 2px;
   border-color: aqua;
-  background: linear-gradient(to top, #113769 0%, #648fb1 100%);
+  background: linear-gradient(
+    to top,
+    rgb(17, 55, 105, 0.8) 0%,
+    rgb(100, 143, 177, 0.8) 100%
+  );
 }
 .place-row {
   padding: 30px 0;
@@ -71,13 +75,13 @@ small a {
   border-radius: 8px;
   padding: 30px 0;
 }
-ul.date {
+.date {
   list-style: none;
-  font-family: monospace;
+  padding-left: 3px;
   font-size: 20px;
   font-weight: 500;
-  padding-left: 3px;
 }
+
 .main-icon {
   text-align: center;
   font-size: 60px;
@@ -93,4 +97,8 @@ ul.date {
   text-align: center;
   font-size: 40px;
   color: rgba(8, 66, 143, 0.6);
+}
+.card,
+li.list-group-item {
+  background-color: rgb(17, 55, 105, 0.2);
 }
