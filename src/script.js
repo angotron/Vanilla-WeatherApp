@@ -95,13 +95,20 @@ celsiusLink.addEventListener("click", displayCelsiusTemp);
 searchCity("New York");
 
 // FORECAST
+function getForecast(response) {
+  let forecastIconElement = document.querySelector("#forecast-icon");
+
+  forecastIconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
+  forecastIconElement.setAttribute("alt", response.data.weather[0].description);
+}
 
 /* Forecast Plan
-
 1) Build the structure (html and css for the forecast)
 
 2) add api call for forecast data
 
 3) replace fake with real data
-
 */

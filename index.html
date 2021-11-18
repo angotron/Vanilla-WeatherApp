@@ -45,6 +45,7 @@
         <div class="row place-row">
           <div class="col-4">
             <ul>
+              <li>Local time:</li>
               <li class="date" id="date"></li>
             </ul>
           </div>
@@ -77,62 +78,18 @@
           <!-- Tomorrow -->
           <div class="col-3">
             <div class="card" style="width: 150px">
-              <i class="fas fa-cloud-sun forecast-icon"></i>
               <div class="card-body">
-                <h5 class="card-title">Forecast</h5>
-                <p class="card-text">temp</p>
+                <h5 class="card-title">Tomorrow</h5>
+                <p class="card-text">
+                  <span class="forecast-temp min"> 20° /</span>
+                  <span class="forecast-temp-max"> 50°C </span>
+                </p>
+                <div id="tomorrow-icon"><img src="" alt="tomorrow-icon" /></div>
               </div>
               <ul class="list-group list-group-flush">
-                <li class="list-group-item">condition</li>
-                <li class="list-group-item">humidity</li>
-                <li class="list-group-item">wind speed</li>
-              </ul>
-            </div>
-          </div>
-          <!-- 2 days -->
-          <div class="col-3">
-            <div class="card" style="width: 150px">
-              <i class="fas fa-cloud-sun forecast-icon"></i>
-              <div class="card-body">
-                <h5 class="card-title">Forecast</h5>
-                <p class="card-text">temp</p>
-              </div>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">condition</li>
-                <li class="list-group-item">humidity</li>
-                <li class="list-group-item">wind speed</li>
-              </ul>
-            </div>
-          </div>
-          <!-- 3 days -->
-          <div class="col-3">
-            <div class="card" style="width: 150px">
-              <i class="fas fa-cloud-sun forecast-icon"></i>
-
-              <div class="card-body">
-                <h5 class="card-title">Forecast</h5>
-                <p class="card-text">temp</p>
-              </div>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">condition</li>
-                <li class="list-group-item">humidity</li>
-                <li class="list-group-item">wind speed</li>
-              </ul>
-            </div>
-          </div>
-          <!-- 4 days -->
-          <div class="col-3">
-            <div class="card" style="width: 150px">
-              <i class="fas fa-cloud-sun forecast-icon"></i>
-
-              <div class="card-body">
-                <h5 class="card-title">Forecast</h5>
-                <p class="card-text">temp</p>
-              </div>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">condition</li>
-                <li class="list-group-item">humidity</li>
-                <li class="list-group-item">wind speed</li>
+                <li class="list-group-item forecast-condition">Sunny</li>
+                <li class="list-group-item forecast-humidity">many %</li>
+                <li class="list-group-item forecast-wind-speed">many km/h</li>
               </ul>
             </div>
           </div>

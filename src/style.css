@@ -9,6 +9,7 @@ h2 {
 }
 ul {
   padding: 0;
+  list-style: none;
 }
 li.first-letter {
   text-transform: capitalize;
@@ -18,6 +19,7 @@ small a {
   text-decoration: none;
   color: rgb(3, 161, 3);
 }
+/* CLASSES*/
 .weather-app {
   max-width: 800px;
   margin: 40px auto;
