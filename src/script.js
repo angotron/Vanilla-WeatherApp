@@ -1,3 +1,5 @@
+// FUNCTIONS
+
 function formatDate(timestamp) {
   let date = new Date(timestamp);
   let hours = date.getHours();
@@ -75,18 +77,31 @@ function displayCelsiusTemp(event) {
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
 }
 
+// VARIABLES
+
 let celsiusTemperature = null;
 
 let form = document.querySelector("#search-form");
-form.addEventListener("submit", handleSubmit);
 
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
-fahrenheitLink.addEventListener("click", displayFahrenheitTemp);
 
 let celsiusLink = document.querySelector("#celsius-link");
-celsiusLink.addEventListener("click", displayCelsiusTemp);
 
+// CALLS
+
+form.addEventListener("submit", handleSubmit);
+fahrenheitLink.addEventListener("click", displayFahrenheitTemp);
+celsiusLink.addEventListener("click", displayCelsiusTemp);
 searchCity("New York");
 
-//how to get button working
-//any way to control size of openmapweather-icons without loosing resolution?
+// FORECAST
+
+/* Forecast Plan
+
+1) Build the structure (html and css for the forecast)
+
+2) add api call for forecast data
+
+3) replace fake with real data
+
+*/
