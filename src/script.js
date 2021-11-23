@@ -115,7 +115,7 @@ function displayForecast(response) {
       forecastHTML =
         forecastHTML +
         ` <div class="col-2 forecast" id="forecast">
-    <div class="card" style="width: 190px">
+    <div class="card" style="width: 180px">
     <div class="card-body">
     <h5 class="card-title" id="forecast-day">${formatForecastDay(
       forecastDay.dt
