@@ -1,23 +1,23 @@
 h1 {
-  color: rgb(53, 134, 114);
+  color: #ec6e4d;
   font-size: 60px;
 }
 h2 {
   display: inline;
   font-size: 60px;
-  color: rgb(35, 76, 129, 0.8);
+  color: #c45a40;
 }
 ul {
   padding: 0;
   list-style: none;
 }
-li.first-letter {
+li::first-letter {
   text-transform: capitalize;
 }
 small a {
   font-family: monospace;
   text-decoration: none;
-  color: rgb(3, 161, 3);
+  color: #ec6e4d;
 }
 /* CLASSES*/
 .forecast {
@@ -25,12 +25,12 @@ small a {
 }
 
 .weather-app {
-  max-width: 800px;
-  min-width: 750px;
+  max-width: 1000px;
+  min-width: 850px;
   margin: 40px auto;
   padding: 30px;
   border: solid;
-  border-color: rgb(166, 221, 239, 0.8);
+  border-color: #ec6e4d;
   border-radius: 10px;
   background: linear-gradient(
     109.6deg,
@@ -48,8 +48,8 @@ small a {
   );
 
   border-radius: 8px;
-  border-width: 4px;
-  border-color: rgb(0, 255, 255, 0.5);
+  border-width: 2px;
+  border-color: #ec6e4d;
   padding: 5px;
 }
 
@@ -73,21 +73,42 @@ small a {
   border-radius: 8px;
   padding: 30px 0;
 }
+
 .date {
   list-style: none;
   padding-left: 3px;
+  margin-top: 34px;
   font-size: 20px;
   font-weight: 500;
+  color: rgb(17, 55, 105, 0.8);
 }
 
-.main-degree .active {
+.active {
   color: black;
   text-decoration: none;
   cursor: default;
 }
+.temp-link {
+  margin-left: -3px;
+  margin-bottom: 20px;
+}
+
 .conditions {
   list-style: none;
+  line-height: 28px;
+  color: #ec6e4d;
+}
+.emoji {
+  font-size: 20px;
+  margin-right: 20px;
+  text-align: right;
+}
+.desc,
+.hum,
+.wind {
+  font-size: large;
   text-align: left;
+  font-weight: bold;
 }
 .forecast-icon {
   text-align: center;
@@ -97,4 +118,15 @@ small a {
 .card,
 li.list-group-item {
   background-color: rgb(17, 55, 105, 0.2);
+  color: rgb(17, 55, 105, 0.8);
+  font-size: 15px;
+}
+.forecast-emoji {
+  font-size: 20px;
+  margin-right: 8px;
+}
+.col-2.forecast {
+  flex: 0 0 auto;
+  width: 20%;
+  padding: 0;
 }

@@ -17,7 +17,6 @@
     <title>Vanilla WeatherApp</title>
   </head>
   <body>
-    <!-- COMMENT -->
     <div class="container">
       <div class="weather-app">
         <!-- FORM -->
@@ -44,9 +43,8 @@
         <!-- TODAY -->
         <div class="row place-row">
           <div class="col-4">
-            <ul>
-              <li>Local time:</li>
-              <li class="date" id="date"></li>
+            <ul class="date">
+              <li id="date"></li>
             </ul>
           </div>
           <div class="col-5"><h1 id="searched-city"></h1></div>
@@ -55,22 +53,45 @@
           </div>
         </div>
         <div class="row temp-row">
-          <div class="col-7 main-degree">
+          <div class="col-1 main-degree">
             <h2 id="current-temp"></h2>
+          </div>
+          <div class="col-5 temp-link">
             <a href="" id="celsius-link" class="active">°C</a>
             <a href="" id="fahrenheit-link">| °F</a>
           </div>
-          <div class="col-5">
+          <div class="col-2">
+            <ul class="conditions">
+              <li class="description">Conditions:</li>
+              <li class="humidity">Humidity:</li>
+              <li class="wind-speed">Wind-speed:</li>
+            </ul>
+          </div>
+
+          <div class="col-1">
             <ul class="conditions">
               <li class="description">
-                🔮 Conditions: <span id="description"></span>
+                <span class="emoji"> 🔮 </span>
               </li>
               <li class="humidity">
-                🤿 Humidity: <span id="humidity"> </span>%
+                <span class="emoji"> 🤿 </span>
               </li>
               <li class="wind-speed">
-                🌬 Wind-speed:
-                <span id="wind-speed"></span> km/h
+                <span class="emoji"> 🌬 </span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-3">
+            <ul class="conditions">
+              <li class="description">
+                <span id="description" class="desc"></span>
+              </li>
+              <li class="humidity">
+                <span id="humidity" class="hum"> </span> %
+              </li>
+              <li class="wind-speed">
+                <span id="wind-speed" class="wind"></span> km/h
               </li>
             </ul>
           </div>
@@ -82,7 +103,7 @@
           <a
             href="https://github.com/angotron/Vanilla-WeatherApp"
             target="_blank"
-            >Open-source code, by Angotron</a
+            >Open-source code, by Anne Goro Tronsmo Haugland</a
           ></small
         >
       </div>

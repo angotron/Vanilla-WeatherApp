@@ -114,8 +114,8 @@ function displayForecast(response) {
     if (index < 6 && index > 0) {
       forecastHTML =
         forecastHTML +
-        ` <div class="col-3" id="forecast">
-    <div class="card" style="width: 175px">
+        ` <div class="col-2 forecast" id="forecast">
+    <div class="card" style="width: 190px">
     <div class="card-body">
     <h5 class="card-title" id="forecast-day">${formatForecastDay(
       forecastDay.dt
@@ -137,13 +137,13 @@ function displayForecast(response) {
     alt="forecast-icon" /></div>
     </div>
     <ul class="list-group list-group-flush">
-    <li class="list-group-item forecast-condition">  🔮  ${
+    <li class="list-group-item forecast-condition">  <span class="forecast-emoji">🔮 </span>  ${
       forecastDay.weather[0].description
     }</li>
-    <li class="list-group-item forecast-humidity">🤿   ${
+    <li class="list-group-item forecast-humidity"><span class="forecast-emoji"> 🤿 </span>  ${
       forecastDay.humidity
     }%</li>
-    <li class="list-group-item forecast-wind-speed">🌬  ${Math.round(
+    <li class="list-group-item forecast-wind-speed"><span class="forecast-emoji"> 🌬 </span> ${Math.round(
       forecastDay.wind_speed
     )}
      km/h</li>
