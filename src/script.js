@@ -111,7 +111,7 @@ function displayForecast(response) {
   let forecastHTML = `<div class="row forecast-row">`;
 
   forecast.forEach(function (forecastDay, index) {
-    if (index < 6) {
+    if (index < 6 && index > 0) {
       forecastHTML =
         forecastHTML +
         ` <div class="col-3" id="forecast">
@@ -129,7 +129,7 @@ function displayForecast(response) {
     )}° /</span>
     <span class="forecast-temp-max">  ${Math.round(
       forecastDay.temp.max
-    )}°C </span>
+    )}° <strong> C </strong> </span>
     </p>
     <div id="forecast-icon"><img src="http://openweathermap.org/img/wn/${
       forecastDay.weather[0].icon
@@ -174,11 +174,3 @@ form.addEventListener("submit", handleSubmit);
 fahrenheitLink.addEventListener("click", displayFahrenheitTemp);
 celsiusLink.addEventListener("click", displayCelsiusTemp);
 searchCity("New York");
-/* Forecast Plan
-1) Build the structure (html and css for the forecast)
-
-2) add api call for forecast data
-
-3) replace fake with real data
-https://api.openweathermap.org/data/2.5/onecall?lat={lat}&lon={lon}&exclude={part}&appid={API key}
-*/
